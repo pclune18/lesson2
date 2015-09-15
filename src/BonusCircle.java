@@ -1,20 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author park2210
- */
+import TurtleGraphics.*;
 public class BonusCircle {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        SketchPadWindow s= new SketchPadWindow(400,400);
+        StandardPen p= new StandardPen(s);
+        int x;
+        x=+1;
+        for(int i = 1; i<=100; i++){
+            p.up();
+            p.move(x);
+            p.down();
+            p.move(x);
+            p.turn(3.6);
+        }
     }
     
 }
