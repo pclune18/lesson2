@@ -11,7 +11,7 @@ public class BonusCircle {
             p.up();
             p.move(x);
             p.down();
-            p.move(x);
+            p.move(3);
             p.turn(3.6);
         }
     }
